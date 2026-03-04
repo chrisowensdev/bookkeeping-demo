@@ -4,9 +4,9 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} !^elevatedevworks\.com$ [NC,OR]
 RewriteCond %{HTTPS} !=on [OR]
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^ https://stoneledge.elevatedevworks.com%{REQUEST_URI} [L,R=301]
+RewriteRule ^ https://stoneledger.elevatedevworks.com%{REQUEST_URI} [L,R=301]
 
-RewriteRule ^(.\*/)?index\.(html?|php)$ https://stoneledge.elevatedevworks.com/$1 [L,R=301,NC]
+RewriteRule ^(.\*/)?index\.(html?|php)$ https://stoneledger.elevatedevworks.com/$1 [L,R=301,NC]
 
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
