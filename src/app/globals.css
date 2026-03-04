@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+	/* Fonts */
+	--font-sans:
+		var(--font-text), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+		Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+	--font-display:
+		var(--font-display), var(--font-text), ui-sans-serif, system-ui,
+		-apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+
+	/* Radius scale */
+	--radius: 10px;
+	--radius-sm: calc(var(--radius) - 4px);
+	--radius-md: calc(var(--radius) - 2px);
+	--radius-lg: var(--radius);
+	--radius-xl: calc(var(--radius) + 4px);
+
+	/* Core palette (light) */
+	--color-background: #fafafa; /* BRAND.bg */
+	--color-foreground: #0b1220; /* BRAND.heading */
+	--color-card: #ffffff;
+	--color-card-foreground: #0b1220;
+	--color-card-surface: #ffffff; /* used by bg-card-surface */
+	--color-border: #e5e7eb; /* BRAND.border */
+	--color-input: #e4e8ef;
+	--color-ring: #1d4ed8; /* BRAND.teal */
+	--color-primary: #ffba00; /* BRAND.teal */
+	--color-primary-foreground: #ffffff;
+	--color-secondary-light: #eaf3f7; /* soft brand tint */
+	--color-secondary-foreground: #0b1220;
+	--color-muted: #f1f5f9;
+	--color-muted-foreground: #64748b;
+	--color-accent: #d4a72c; /* BRAND.tealDark */
+	--color-accent-foreground: #1e1d1d;
+
+	/* Custom brand utilities used in components */
+	--color-brand-accent: #1e7f88; /* for bg/ring/decoration-brand-accent */
+	--color-gold-soft: #fff5e6; /* soft amber panel bg */
+
+	--color-secondary: #ffba00;
+	--color-body: #2b3445;
+}
+
+@layer base {
+	* {
+		@apply border-border outline-ring/50;
+	}
+	h1,
+	h2,
+	h3 {
+		@apply font-display font-semibold tracking-tight;
+	}
+	body {
+		@apply bg-background text-foreground font-sans;
+	}
+}

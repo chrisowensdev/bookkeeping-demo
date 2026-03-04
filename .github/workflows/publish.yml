@@ -1,0 +1,47 @@
+# .github/workflows/publish.yml
+name: Build & publish static site to deploy
+on:
+    push:
+        branches: [main]
+
+permissions:
+    contents: write
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+                  cache: npm
+
+            - run: npm ci
+
+              # Build static export (produces out/)
+            - run: npm run build
+
+            # If you use next-sitemap
+            - run: npm run sitemap
+
+            # Ensure .htaccess gets shipped
+            - name: Include .htaccess
+              run: cp .htaccess out/.htaccess
+
+            # >>> ADD: ship contact.php + PHPMailer <<<
+            - name: Include PHP endpoint and PHPMailer
+              run: |
+                  mkdir -p out/phpmailer/src
+                  cp public/contact.php out/contact.php
+                  cp public/phpmailer/src/PHPMailer.php out/phpmailer/src/PHPMailer.php
+                  cp public/phpmailer/src/SMTP.php out/phpmailer/src/SMTP.php
+                  cp public/phpmailer/src/Exception.php out/phpmailer/src/Exception.php
+
+            - name: Publish to deploy branch
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  branch: deploy
+                  folder: out
+                  clean: true
