@@ -9,11 +9,12 @@ import Header from "@/components/layout/Header";
 export const metadata: Metadata = {
 	metadataBase: new URL(siteConfig.siteUrl),
 	title: {
-		default: `Residential Contractor | ${siteConfig.brandName}`,
+		default: `Bookkeeper for small businesses | ${siteConfig.brandName}`,
 		template: `%s | ${siteConfig.brandName}`,
 	},
 	description:
-		"We design, build, and maintain fast, SEO-ready websites for small businesses and professional services. Richmond, VA-based and remote-friendly.",
+		"Monthly bookkeeping and catch-up support for small businesses. Clean reconciliations, clear reporting, and a steady monthly rhythm.",
+
 	openGraph: {
 		type: "website",
 		url: siteConfig.siteUrl,

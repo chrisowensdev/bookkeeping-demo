@@ -1,23 +1,4 @@
 import type { Metadata } from "next";
-import {
-	ArrowRight,
-	CheckCircle2,
-	ClipboardList,
-	Compass,
-	Mail,
-	MapPin,
-	Phone,
-	ShieldCheck,
-} from "lucide-react";
-import Container from "@/components/layout/Container";
-import Section from "@/components/layout/Section";
-import Pill from "@/components/ui/Pill";
-import Card from "@/components/ui/Card";
-import SectionHeading from "@/components/layout/SectionHeading";
-import { Button } from "@/components/ui/Button";
-import { Field, SelectField, TextAreaField } from "@/components/ui/FormField";
-import Link from "next/link";
-import Image from "next/image";
 import { Hero } from "./page/_components/Hero";
 import { TrustBar } from "./page/_components/TrustBar";
 import WhatYouGet from "./page/_components/WhatYouGet";
@@ -28,16 +9,9 @@ import FAQ from "./page/_components/FAQ";
 import FinalCTA from "./page/_components/FinalCTA";
 
 export const metadata: Metadata = {
-	title: "Project Management Consultant | Kona Inc",
+	title: "Stone & Ledger | Bookkeeping for small businesses",
 	description:
-		"Kona Inc is a project management consultant offering fractional PM support and project delivery help. Explore capabilities, experience, and selected highlights, then get in touch.",
-	alternates: { canonical: "/" },
-	openGraph: {
-		title: "Kona Inc | Project Management Consultant",
-		description:
-			"Fractional PM support and project delivery help for teams. Clear direction, steady coordination, calm follow-through.",
-		type: "website",
-	},
+		"Monthly bookkeeping and catch-up support for small businesses. Clean reconciliations, clear reporting, and a steady monthly rhythm.",
 };
 
 type Highlight = {

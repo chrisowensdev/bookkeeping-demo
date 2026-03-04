@@ -77,7 +77,7 @@ export function Hero() {
 							{/* warm premium glow */}
 							<div
 								aria-hidden="true"
-								className="pointer-events-none absolute -inset-6 rounded-[2rem] blur-2xl opacity-90"
+								className="pointer-events-none absolute -inset-6 rounded-4xl blur-2xl opacity-90"
 								style={{
 									background:
 										"radial-gradient(60% 60% at 35% 25%, rgba(212,167,44,0.28), transparent 62%), radial-gradient(55% 55% at 70% 75%, rgba(11,31,59,0.22), transparent 60%)",
