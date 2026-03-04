@@ -1,0 +1,22 @@
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^elevatedevworks\.com$ [NC,OR]
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://konainc.elevatedevworks.com%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^(.\*/)?index\.(html?|php)$ https://konainc.elevatedevworks.com/$1 [L,R=301,NC]
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains;"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), usb=()"
+  AddDefaultCharset utf-8
+  AddCharset utf-8 .html .css .js .svg .json
+  # Don't blanket-block "bot" user agents; allow major crawlers
+BrowserMatchNoCase "googlebot|bingbot|duckduckbot|adsbot-google" good_bot
+# Example: if you rate-limit, exempt good_bot group.
+</IfModule>

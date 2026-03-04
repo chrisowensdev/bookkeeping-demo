@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Disallow: /
+
+# Host
+Host: https://konainc.elevatedevworks.com
+
+# Sitemaps
+Sitemap: https://konainc.elevatedevworks.com/sitemap.xml
