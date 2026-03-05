@@ -82,7 +82,8 @@ export default function MonthlyRhythm() {
 											<div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-5">
 												<div className="flex items-start justify-between gap-4">
 													<div className="flex items-start gap-3">
-														<div className="mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#254256]/10">
+														<div className="relative mt-0.5 inline-flex h-10 w-10 items-center justify-center">
+															<div className="absolute mt-0.5  h-10 w-10 rounded-full bg-[#254256]/10" />
 															<Icon
 																className="h-5 w-5 text-[#254256]"
 																aria-hidden="true"
@@ -124,7 +125,7 @@ export default function MonthlyRhythm() {
 
 									<div className="mt-5 space-y-3">
 										<div className="flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
-											<div className="mt-0.5 h-2 w-2 rounded-full bg-emerald-600" />
+											<div className="mt-1 min-h-2 min-w-2 h-2 w-2 rounded-full bg-emerald-600" />
 											<div>
 												<p className="text-sm font-semibold text-slate-900">
 													Predictable cadence
@@ -136,8 +137,8 @@ export default function MonthlyRhythm() {
 											</div>
 										</div>
 
-										<div className="flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
-											<div className="mt-0.5 h-2 w-2 rounded-full bg-emerald-600" />
+										<div className=" flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
+											<div className=" mt-1 min-h-2 min-w-2 h-2 w-2 rounded-full bg-emerald-600" />
 											<div>
 												<p className="text-sm font-semibold text-slate-900">
 													Cleaner financials
@@ -151,7 +152,7 @@ export default function MonthlyRhythm() {
 										</div>
 
 										<div className="flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
-											<div className="mt-0.5 h-2 w-2 rounded-full bg-emerald-600" />
+											<div className="mt-0.5 min-h-2 min-w-2 h-2 w-2 rounded-full bg-emerald-600" />
 											<div>
 												<p className="text-sm font-semibold text-slate-900">
 													Better decisions
