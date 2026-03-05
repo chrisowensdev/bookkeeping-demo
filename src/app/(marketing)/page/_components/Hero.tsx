@@ -26,7 +26,7 @@ export function Hero() {
 							</Pill>
 						</div>
 
-						<h1 className="text-3xl font-bold tracking-normal sm:text-4xl md:text-5xl text-white">
+						<h1 className="text-3xl font-bold tracking-normal sm:text-4xl md:text-5xl text-white sm:text-left">
 							Monthly{" "}
 							<span className="relative inline-block">
 								{/* softer, premium emphasis */}
@@ -36,9 +36,6 @@ export function Hero() {
 								<span
 									aria-hidden="true"
 									className="absolute inset-x-0 -bottom-1 z-0 h-3 rounded-md"
-									// style={{
-									// 	background: "rgba(212,167,44,0.18)",
-									// }}
 								/>
 							</span>{" "}
 							that keeps you confident and compliant.
@@ -50,11 +47,11 @@ export function Hero() {
 							communication, and reporting you can actually use.
 						</p>
 
-						<div className="mt-8 flex flex-wrap items-center gap-3">
+						<div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:items-center">
 							<Button
-								href="#contact"
+								href="/contact/"
 								primary
-								className="bg-amber-400 text-slate-900 hover:bg-amber-300"
+								className="w-[90%] justify-center bg-amber-400 text-slate-900 hover:bg-amber-300 sm:w-auto"
 							>
 								Get in Touch
 							</Button>
@@ -62,7 +59,7 @@ export function Hero() {
 							{/* premium secondary: amber outline on dark */}
 							<Button
 								href="#capabilities"
-								className="border border-amber-300/40 text-amber-100 hover:bg-amber-200/10"
+								className="w-[90%] justify-center border border-amber-300/40 text-amber-100 hover:bg-amber-200/10 sm:w-auto"
 							>
 								Explore capabilities
 							</Button>

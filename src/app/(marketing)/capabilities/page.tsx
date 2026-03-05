@@ -38,7 +38,7 @@ export default function CapabilitiesPage() {
 							</p>
 						</Pill>
 
-						<h1 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+						<h1 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl sm:text-left">
 							Bookkeeping support built around your books
 						</h1>
 						<p className="mt-4 max-w-2xl text-base text-white/70">
@@ -47,17 +47,17 @@ export default function CapabilitiesPage() {
 							with clarity and confidence.
 						</p>
 
-						<div className="mt-7 flex flex-wrap items-center gap-3">
+						<div className="mt-7 flex flex-col items-center gap-3 sm:flex-row sm:items-center">
 							<Button
-								href="/contact"
+								href="/contact/"
 								primary
-								className="bg-amber-400 text-slate-900 hover:bg-amber-300"
+								className="w-[90%] bg-amber-400 text-slate-900 hover:bg-amber-300 sm:w-auto"
 							>
 								Book a free consult
 							</Button>
 							<Button
 								href="#included"
-								className="border border-amber-300/35 text-amber-100 hover:bg-amber-200/10"
+								className="w-[90%] border border-amber-300/35 text-amber-100 hover:bg-amber-200/10 sm:w-auto"
 							>
 								What&apos;s included
 							</Button>
