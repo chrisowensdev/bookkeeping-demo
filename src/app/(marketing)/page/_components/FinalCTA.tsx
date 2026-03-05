@@ -34,18 +34,18 @@ export default function FinalCTA() {
 								the simplest next step.
 							</p>
 
-							<div className="mt-7 flex flex-wrap items-center gap-3">
+							<div className="mt-7 flex flex-col items-center gap-3 sm:flex-row sm:item-center">
 								<Button
-									href="#contact-form"
+									href="/contact/"
 									primary
-									className="bg-amber-400 text-slate-900 hover:bg-amber-300"
+									className="w-[90%] bg-amber-400 text-slate-900 hover:bg-amber-300 sm:w-auto"
 								>
 									Book a free consult
 								</Button>
 
 								<Button
 									href="#capabilities"
-									className="border border-amber-300/35 text-amber-100 hover:bg-amber-200/10"
+									className="w-[90%] border border-amber-300/35 text-amber-100 hover:bg-amber-200/10 sm:w-auto"
 								>
 									View services
 								</Button>

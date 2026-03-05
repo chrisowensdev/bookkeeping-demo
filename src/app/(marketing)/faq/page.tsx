@@ -45,17 +45,17 @@ export default function FAQPage() {
 							catch-up work, and reporting.
 						</p>
 
-						<div className="mt-7 flex flex-wrap items-center gap-3">
+						<div className="mt-7 flex flex-col items-center gap-3 sm:flex-row sm:items-center">
 							<Button
-								href="/contact"
+								href="/contact/"
 								primary
-								className="bg-amber-400 text-slate-900 hover:bg-amber-300"
+								className="w-[90%] sm:flex-row sm:items-centerbg-amber-400 text-slate-900 hover:bg-amber-300 sm:w-auto"
 							>
 								Book a free consult
 							</Button>
 							<Button
-								href="/how-it-works"
-								className="border border-amber-300/35 text-amber-100 hover:bg-amber-200/10"
+								href="/how-it-works/"
+								className="w-[90%] border border-amber-300/35 text-amber-100 hover:bg-amber-200/10 sm:w-auto"
 							>
 								How it works
 							</Button>

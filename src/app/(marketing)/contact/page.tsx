@@ -42,17 +42,17 @@ export default function ContactPage() {
 							or catch-up.
 						</p>
 
-						<div className="mt-7 flex flex-wrap items-center gap-3">
+						<div className="mt-7 flex flex-col items-center gap-3 sm:flex-row sm:items-center">
 							<Button
 								href="#contact-form"
 								primary
-								className="bg-amber-400 text-slate-900 hover:bg-amber-300"
+								className="w-[90%] bg-amber-400 text-slate-900 hover:bg-amber-300 sm:w-auto"
 							>
 								Jump to form
 							</Button>
 							<Button
-								href="/how-it-works"
-								className="border border-amber-300/35 text-amber-100 hover:bg-amber-200/10"
+								href="/how-it-works/"
+								className="w-[90%] border border-amber-300/35 text-amber-100 hover:bg-amber-200/1 sm:w-auto"
 							>
 								How it works
 							</Button>
@@ -125,10 +125,10 @@ export default function ContactPage() {
 										/>
 									</div>
 
-									<div className="flex flex-wrap items-center gap-3 pt-2">
+									<div className="flex flex-col items-center gap-3 pt-2 sm:flex-row sm:items-center">
 										<button
 											type="button"
-											className="rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-amber-300"
+											className="rounded-full bg-amber-400 px-5 py-3 text-sm font-semibold text-slate-900 hover:bg-amber-300 w-[90%] sm:w-auto"
 										>
 											Send message
 										</button>
