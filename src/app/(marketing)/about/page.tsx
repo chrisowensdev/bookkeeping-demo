@@ -36,7 +36,7 @@ export default function AboutPage() {
 							</p>
 						</Pill>
 
-						<h1 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4x">
+						<h1 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
 							Structure first. Clarity always.
 						</h1>
 						<p className="mt-4 max-w-2xl text-base text-white/70">
