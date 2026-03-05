@@ -38,13 +38,6 @@ export const metadata: Metadata = {
 		// If you prefer explicit control in addition to app/icon.png:
 		icon: "/images/favicon.png",
 		apple: "/images/favicon.png",
-		other: [
-			{
-				rel: "mask-icon",
-				url: "/safari-pinned-tab.svg",
-				color: "#05305B",
-			},
-		],
 	},
 	robots: {
 		index: false,
