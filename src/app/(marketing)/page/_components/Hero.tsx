@@ -4,15 +4,17 @@ import Pill from "@/components/ui/Pill";
 
 export function Hero() {
 	return (
-		<section
-			className="relative overflow-hidden pt-10 pb-14 bg-[#254256] bg-linear-to-b from-white/5 to-transparent"
-			// style={{
-			// 	background:
-			// 		// subtle premium highlight (top-left) + deep navy base
-			// 		"radial-gradient(70% 60% at 22% 12%, rgba(212,167,44,0.16), transparent 62%), radial-gradient(55% 55% at 80% 30%, rgba(255,255,255,0.06), transparent 60%), #254256",
-			// }}
-		>
-			<Container>
+		<section className="relative overflow-hidden pt-10 pb-14 bg-[#254256] bg-linear-to-b from-white/5 to-transparent">
+			<div
+				className="absolute inset-0 bg-cover bg-center opacity-20"
+				style={{
+					backgroundImage: "url('/images/hero-background.webp')",
+				}}
+			/>
+
+			{/* dark overlay */}
+			<div className="absolute inset-0 bg-[#254256]/40" />
+			<Container className="relative">
 				<div className="grid items-center gap-10 md:grid-cols-12">
 					<div className="md:col-span-7">
 						<div className="mb-5 flex flex-wrap gap-2">

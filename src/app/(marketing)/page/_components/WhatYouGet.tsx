@@ -90,9 +90,10 @@ export default function WhatYouGet({
 										key={d.title}
 										className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
 									>
-										<div className="mt-0.5 inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#254256]/10">
+										<div className=" relative mt-0.5 inline-flex h-9 w-9 items-center justify-center">
+											<div className=" absolute mt-0.5 inline-flex h-9 w-9 rounded-full bg-[#254256]/10" />
 											<Icon
-												className="h-5 w-5 text-[#254256]"
+												className="relative h-5 w-5 text-[#254256]"
 												aria-hidden="true"
 											/>
 										</div>
@@ -116,11 +117,7 @@ export default function WhatYouGet({
 							{/* subtle depth behind cards (NOT a glow — just a soft tint) */}
 							<div
 								aria-hidden="true"
-								className="pointer-events-none absolute -inset-4 rounded-[2rem]"
-								// style={{
-								// 	background:
-								// 		"radial-gradient(60% 60% at 35% 25%, rgba(37,66,86,0.10), transparent 65%)",
-								// }}
+								className="pointer-events-none absolute -inset-4 rounded-4xl"
 							/>
 
 							<Card className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
@@ -162,7 +159,8 @@ export default function WhatYouGet({
 									<div className="mt-4 space-y-3">
 										<div className="flex items-center justify-between rounded-xl border border-slate-200 bg-white p-3">
 											<div className="flex items-center gap-3">
-												<div className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#254256]/10">
+												<div className="relative inline-flex h-9 w-9 items-center justify-center">
+													<div className="absolute inline-flex h-9 w-9 rounded-full bg-[#254256]/10" />
 													<CalendarClock
 														className="h-5 w-5 text-[#254256]"
 														aria-hidden="true"
@@ -185,7 +183,8 @@ export default function WhatYouGet({
 
 										<div className="flex items-center justify-between rounded-xl border border-slate-200 bg-white p-3">
 											<div className="flex items-center gap-3">
-												<div className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#254256]/10">
+												<div className="relative inline-flex h-9 w-9 items-center justify-center">
+													<div className="absolute inline-flex h-9 w-9 rounded-full bg-[#254256]/10" />
 													<Shield
 														className="h-5 w-5 text-[#254256]"
 														aria-hidden="true"

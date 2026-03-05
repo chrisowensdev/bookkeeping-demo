@@ -62,7 +62,9 @@ function ServiceCard({ title, description, icon: Icon }: Service) {
 		<Card className="rounded-2xl border border-slate-200 bg-white shadow-sm">
 			<div className="p-5">
 				<div className="flex items-start gap-3">
-					<div className="mt-0.5 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#254256]/10">
+					<div className="relative mt-0.5 inline-flex h-10 w-10 items-center justify-center ">
+						<div className="absolute mt-0.5 h-10 w-10 rounded-full bg-[#254256]/10" />
+
 						<Icon
 							className="h-5 w-5 text-[#254256]"
 							aria-hidden="true"

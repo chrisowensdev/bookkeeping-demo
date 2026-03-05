@@ -20,7 +20,17 @@ export default function CapabilitiesPage() {
 					aria-hidden="true"
 					className="pointer-events-none absolute inset-0 bg-linear-to-b from-white/5 to-transparent"
 				/>
-				<Container>
+
+				<div
+					className="absolute inset-0 bg-cover bg-center opacity-20"
+					style={{
+						backgroundImage: "url('/images/hero-background.webp')",
+					}}
+				/>
+
+				{/* dark overlay */}
+				<div className="absolute inset-0 bg-[#254256]/40" />
+				<Container className="relative">
 					<div className="mx-auto max-w-5xl">
 						<Pill className="border border-amber-300/25 bg-amber-200/10">
 							<p className="p-1 text-xs font-semibold tracking-wide text-amber-100/90">
